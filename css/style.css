@@ -1,0 +1,384 @@
+
+
+/* ======== mobile view ================================*/
+
+@media screen and (min-width: 350px){
+    
+    body{
+        background-color: #F9E9DA;
+        margin: 0px 50px;
+        padding-top: 200px;
+        background-image: url(../images/background-women-face-abstract.jpg);
+        background-size:  30vh;
+        background-repeat: no-repeat;
+        background-position: top right;
+        font-family: 'oxygen';
+        font-size: 18px;
+        
+    }
+
+    h1 span::before{
+        content:"phone device";
+    }
+
+    header{
+        min-height: 120px;
+    }
+
+    nav{
+        padding-top: 35px;
+        background-color: orange;
+        text-align:center;
+        padding: 0px 20px;
+        margin: 0px 0px 30px;
+        min-height: 70px;
+    }
+  
+    
+    nav li{
+        margin-left: 5%;
+        margin-right:0;
+    }
+
+
+    
+    li{
+        display: inline-block;
+        padding: 10px 40px;
+    }
+    
+    a{
+        color: #3C5556;
+        text-decoration: none;
+        font-style: bold;
+        font-family: Arial;
+        font-size: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    a:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    .active{
+        color:black;
+        border: 1px solid #C8DBD7;
+        background-color: #F5D4C3;
+        font-weight: 600;
+    }
+    
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    img:nth-of-type(even){
+        border: 10px solid;
+        border-image: linear-gradient(#f9dcc4, #f08080) 30;
+        margin: auto;
+        width: 50%;
+        padding: 5px;
+        border-radius: 30px;
+    }
+    
+    
+    img:nth-of-type(odd){
+        border: 10px solid;
+        border-image: linear-gradient(#e1eec7, #7fdbff) 30;
+        margin: auto;
+        width: 50%;
+        padding: 5px;
+        border-radius: 30px;
+    }
+    
+    
+    
+    img:hover{
+        border: 10px solid;
+        border-image: linear-gradient(#d2c4f9, #70e7ee) 30;
+        margin: auto;
+        width: 50%;
+        border-radius: 30px;
+    }
+    
+    .skip{
+        /* position:absolute;
+        left:-1000px; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s;
+    }
+    
+    .skip:focus{
+        /* position: relative;
+        left:0px; */
+        transform: translateY(0%);
+    }
+    
+    .icon{
+        color: rgb(22, 10, 131);
+        font-size:20px;
+    }
+    
+    .anim-image{
+        animation: animate 5s linear infinite, fadeIn 3s;;
+    }
+    
+    
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+        
+    }
+    
+    @keyframes animate {
+        from{
+            filter: hue-rotate(0deg);
+        }
+        to{
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    
+    .container{
+        max-width:100vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .women-img1, .women-img2{
+        overflow: hidden;
+        grid-column: 1/2;
+        max-height: 200px;
+    }
+    
+    .women1, .women2{
+        grid-column: 2/3;
+    }
+    
+    
+    .container ul.square{
+        list-style-type: square;
+    }
+    
+    .dict-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .search-form{
+        margin-top:15px;
+        float:right;
+        margin-right: 100px;
+    }
+    
+    input[type=text]{
+        padding:7px;
+        border:none;
+        width:60vw;
+        font-size:16px;
+        font-family: sans-serif;
+    
+    }
+    
+    button{
+        width: 20vw;
+        float:right;
+        background:#d2c4f9;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        cursor:pointer;
+        position: relative;
+        padding:7px;
+        font-family: sans-serif;
+        border:none;
+        font-size: 16px;
+    }
+  
+    main{
+        min-height: 500px;
+    }
+
+    footer{
+        min-height: 200px;
+        background-color: orange;
+        color: #264143;
+        position: absolute
+        padding: 10px;
+        margin: 10px 0px 5px;
+    }
+
+    footer > a {
+        background-color: #F5D4C3;
+        color: #264143;
+        position: absolute;
+        bottom:0;
+        width:100%;
+    }
+
+  }
+    
+    
+     
+
+  /* ======== tablet view ================================*/
+
+  @media screen and (min-width: 700px){
+
+    body{
+        background-color: #FEEFEC;
+        background-image: url(../images/minimal-woman-face-geometric-shape-poster-one-line-drawing-style-192208049.jpeg);   
+    }
+
+    h1 span::before {
+        content: "tablet device";
+    }
+
+    nav{
+        flex: 0 1 250px;
+        background-color: palevioletred;
+    }
+  
+    main{
+        flex: 1 0 auto;
+    }
+
+    footer{
+        background-color: palevioletred;;
+    }
+        
+  }
+
+    /* change to 4 column grid  */
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .women-img1{
+        overflow: hidden;
+        grid-column: 1/2;
+        width: 100%;
+    }
+    
+    .women1{
+        grid-column: 2/3;
+        width: auto;
+    }
+    
+    .women-img2{
+        overflow: hidden;
+        grid-column: 3/4;
+        width: 100%;
+    }
+    
+    .women2{
+        grid-column: 4/5;
+        width: auto;
+    }
+    
+    .container ul.square{
+        list-style-type: square;
+    }
+    
+    .dict-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    /* change the image border hover */
+   
+    img{
+        border: none;
+        border-color: #f08080;
+        border-width: 10px;
+        border: 10px solid palevioletred;
+        clip-path: circle();
+        margin: auto;
+        width: min-content;
+        height:min-content;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    img:hover{
+        border: 10px solid;
+        border-image: linear-gradient(#d2c4f9, #70e7ee) 30;
+        margin: auto;
+        width: 50%;
+        border-radius: 30px;
+    }
+
+
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+    }
+    
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    /* ======== desktop view ================================*/
+
+    @media screen and (min-width: 1100px){
+        body{
+            background-color: #E1F3FF;
+            background-image: url(../images/abstract_women_desktop_view.png);   
+        }
+    
+        h1 span::before {
+            content: "desktop device";
+        }
+
+        nav{
+            background-color: rgb(166, 229, 229);
+        }
+
+        footer{
+            background-color: rgb(166, 229, 229);
+        }
+    }
